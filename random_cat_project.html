@@ -68,18 +68,12 @@
         const image = document.querySelector('.img');
         const url = "https://api.thecatapi.com/v1/images/search";
 
-
         async function fetchHandler(){
 
-            
-
-         
 
                 try{
                     const response = await fetch(url);
                     const data = await response.json();
-
-
 
                     image.src = data[0].url;
 
@@ -87,15 +81,9 @@
                     console.log('error');
                 }
 
-           
-
-            
-
-
-
-
         }
 
     </script> 
 </body>
+
 </html>
